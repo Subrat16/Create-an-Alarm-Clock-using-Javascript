@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Open+Sans:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'open sans', sans-serif
+}
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    min-height: 100vh;
+    background-color: chocolate;
+}
+.wrapper{
+    width: 400px;
+    background: white;
+    border-radius: 50%;
+    flex-direction: column;
+    padding: 30px 30px 40px;
+
+}
+.wrapper img
+{
+ max-width: 100px;
+}
+.wrapper h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.wrapper .content{
+    width: 100%;
+    justify-content: baseline;
+}
+.wrapper .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+
+}
+.content .column{
+    padding: 2 10px;
+    border-radius: 10px;
+    border: 3px solid chocolate;
+    width: calc(100% / 3 - 10px);
+}
+.column select{
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+}
+.wrapper button{
+    width: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: chocolate;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 15px 0;
+    border-radius: 5px ;
+    border: 3px solid chocolate;
+    font-weight: 1000;
+    background: white;
+}
